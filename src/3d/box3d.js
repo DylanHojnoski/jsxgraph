@@ -80,7 +80,6 @@ JXG.createAxes3D = function (board, parents, attributes) {
             axes[na] = view.create("axis3d", [from, to], attr[na.toLowerCase()]);
             axes[na].view = view;
         } else {
-            na += "Border"; // Axes bordered
             from = rear.slice();
             to = front.slice();
             if (i === 2) {
